@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -13,7 +14,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
-public class Table{
+public class TableScrapingTest {
     WebDriver driver;
     @Before
     public void browserSetup () {
@@ -25,7 +26,7 @@ public class Table{
     }
 
     @Test
-    public void scrapDataToCSV() {
+    public void scrapeDataToCSV() {
         driver.get("https://dsebd.org/latest_share_price_scroll_by_value.php");
 
         WebElement table = driver.findElement(By.className("shares-table"));
@@ -60,6 +61,12 @@ public class Table{
 
         } catch (IOException e) {
             System.err.println("Error writing to CSV: " + e.getMessage());
+        }
+    }
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit(); // closes all browser windows and ends session
         }
     }
     }
