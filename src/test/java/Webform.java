@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class DemoQA {
+public class Webform {
     WebDriver driver;
     @Before
     public void browserSetup () {

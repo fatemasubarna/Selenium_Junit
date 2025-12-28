@@ -41,3 +41,16 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+# Gradle build folders
+.gradle/
+build/
+gradle/  # optional if there are other gradle scripts you don't want to track
+
+# IDE files
+.idea/
+
+# Logs
+logs/
+*.log
+
+
