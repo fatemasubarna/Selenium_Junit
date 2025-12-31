@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.monte:monte-screen-recorder:0.7.7'
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     implementation("org.seleniumhq.selenium:selenium-java:4.38.0")
     // https://mvnrepository.com/artifact/junit/junit

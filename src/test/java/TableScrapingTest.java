@@ -66,7 +66,7 @@ public class TableScrapingTest {
     @After
     public void tearDown() {
         if (driver != null) {
-            driver.quit(); // closes all browser windows and ends session
+            driver.quit();// closes all browser windows and ends session
         }
     }
     }
